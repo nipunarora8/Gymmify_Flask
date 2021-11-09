@@ -1,6 +1,7 @@
 import cv2
 import mediapipe as mp
 import numpy as np
+import os
 from .angle_calculation import angle_cal
 
 mp_drawing = mp.solutions.drawing_utils
@@ -83,5 +84,7 @@ def dumbell_press(file_path):
 
                 cap.release()
                 out.release()
+    print("video saved at",vid_name)
+    print(os.listdir('uploads'))
     return vid_name             
 

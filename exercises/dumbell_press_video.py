@@ -51,7 +51,7 @@ def dumbell_press(file_path):
     frame_height = int(cap.get(4))
     frame_width = int(cap.get(3))
     fps = cap.get(cv2.CAP_PROP_FPS)
-    codec = cv2.VideoWriter_fourcc(*'X264')
+    codec = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
     out = cv2.VideoWriter(vid_name,codec, fps, (frame_width,frame_height))
 
     ## Setup mediapipe instance

@@ -80,9 +80,9 @@ def dumbell_press(file_path):
                                         ) 
                 out.write(frame)
             else:
-
-                cap.release()
-                out.release()
+                pass
+    cap.release()
+    out.release()
     print("video saved at",vid_name)
     print(os.listdir('uploads'))
     return vid_name             

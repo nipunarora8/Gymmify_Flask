@@ -46,7 +46,7 @@ def dumbell_press(file_path):
     cap = cv2.VideoCapture(file_path)
     
     vid_name=file_path.split('/')[-1]
-    vid_name = '/uploads/'+ vid_name[:-3] + '_out.avi'
+    vid_name = '/uploads/'+ vid_name[:-4] + '_out.avi'
 
     frame_height = int(cap.get(4))
     frame_width = int(cap.get(3))

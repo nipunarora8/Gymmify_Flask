@@ -52,7 +52,7 @@ def dumbell_press(file_path):
     frame_width = int(cap.get(3))
     fps = cap.get(cv2.CAP_PROP_FPS)
 
-    out = cv2.VideoWriter(vid_name,cv2.VideoWriter_fourcc(*'H264'), fps, (frame_width,frame_height))
+    out = cv2.VideoWriter(vid_name,cv2.VideoWriter_fourcc('h', '2', '6', '4'), fps, (frame_width,frame_height))
 
     ## Setup mediapipe instance
     with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:

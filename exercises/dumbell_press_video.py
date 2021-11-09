@@ -83,6 +83,5 @@ def dumbell_press(file_path):
 
                 cap.release()
                 out.release()
-                cv2.destroyAllWindows()
     return vid_name             
 

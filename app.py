@@ -19,7 +19,7 @@ def output():
         print(file_path)
 
         vid_name = dumbell_press(file_path)
-        vid_name = vid_name.split('/')[-1]
+        vid_name = file_path.split('/')[-1]
         
         return render_template('output.html',video_out=vid_name)
 
